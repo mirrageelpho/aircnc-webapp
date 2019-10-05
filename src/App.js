@@ -1,8 +1,18 @@
 import React from "react";
+import Routes from './routes';
 import "./App.css";
+import logo from "./assets/logo.svg";
 
 function App() {
-  return <h1>Hello Word</h1>;
+
+  return (
+    <div className="container">
+      <img src={logo} alt="AirCNC" />
+      <div className="content">
+        <Routes />
+      </div>
+    </div>
+  );
 }
 
 export default App;

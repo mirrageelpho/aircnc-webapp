@@ -14,7 +14,7 @@ body,
 }
 
 body {
-  background: #000 url("./assets/background.jpg");
+  background: #000 url("./assets/background.jpg") no-repeat;
   background-size: cover;
   -webkit-font-smoothing: antialiased !important;
 }
@@ -22,4 +22,104 @@ body {
 body, input, button {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-size: 14px;
+}
+
+.container {
+  margin: 84px auto 0;
+  max-width: 450px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content{
+  width: 100%;
+  margin-top: 50px;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 30px;
+}
+.container h1 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #f05a5b;
+
+}
+.container div.header{
+  width: 100%;
+  display: flex;
+}
+.container button.logout{
+  border: 0px;
+  border-radius: 2px;
+  height: 25px;
+  font-size: 16px;
+  font-weight: lighter;
+  background-color: rgba(153, 153, 153, 0);
+  color: #999;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.content > p {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: #555;
+
+}
+
+.content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.content form label {
+  font-size: 14px;
+  color: #444;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.content form label span {
+  font-size: 11px;
+  color: #999;
+  font-weight: normal;
+}
+.content form input {
+  padding: 0 15px;
+  height: 45px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.content form div.footer {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  margin: -5px;
+}
+.formBtn {
+margin: 5px;
+}
+.btnGrey {
+  background-color: #999 !important;
+}
+.btnGrey:hover {
+  background-color: #888 !important;
+}
+.content button.btn {
+  border: 0px;
+  border-radius: 2px;
+  width: 100%;
+  height: 45px;
+  padding: 0 28px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #f05a5b;
+  color: #fff;
+  cursor: pointer;
+}
+.content button.btn:hover {
+  background-color: #e14f50;
 }
